@@ -13,7 +13,13 @@ label {
 .background {
   background-color:  rgb(168, 211, 248);
 }
-.result{
+.result1{
+  display: none;
+  background-color: rgb(245, 211, 171);
+  border: 1px solid rgb(10, 13, 48);
+  padding: 10px;
+}
+.result2{
   display: none;
   background-color: rgb(245, 211, 171);
   border: 1px solid rgb(10, 13, 48);
