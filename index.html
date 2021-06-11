@@ -12,25 +12,48 @@
     <form id="roboger">
       <h1 class="center">Mr. Roboger's Neighborhood</h1>
       <br>
-      <br>
-      <br>
       <h4>Enter a number of your choice to see a fun message!</h4>
       <br>
-      <label for="number">Input:</label>
-      <input id="number" type="text">
+      <div class="row">
+        <div class="col-md-4">
+          <label for="number">Input number:</label>
+          <input id="number" type="text">
+        </div>
+        <div class="col-md-4">  
+          <label for="name">(Optional) Name:</label>
+          <input id="name" type="text">
+        </div>
+      </div>
       <br>
       <button type="submit" class="btn btn-success">Submit</button>
       <br>
       <br>
       <div class="result1">
-        <p><strong>Your friendly neighborhood message:</strong>
-          <br>
-          <br>
-          <span id="robogerMessage"></span>
-        </p>
+    
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Your friendly neighborhood message:</strong>
+              <br>
+              <br>
+              <span id="robogerMessage"></span>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img class="img1" src="image/neighbor.jpg" alt="broken screen.">
+            <img class="img1" src="image/beep.png" alt="broken screen.">
+            <img class="img1" src="image/boop.jpg" alt="broken screen.">
+          </div>
+        </div>
       </div>
       <div class="result2">
-        <p><span id="brokenMessage"></span></p>
+        <div class="row">
+          <div class="col-md-6">
+            <p><span id="brokenMessage"></span></p>
+          </div>
+          <div class="col-md-6">
+            <img class="img1" src="image/broke.jpg" alt="broken screen.">
+          </div>
+        </div>
       </div>
     </form> 
   </div>

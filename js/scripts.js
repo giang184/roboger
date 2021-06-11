@@ -1,15 +1,12 @@
 // Utility Logic
-function roboger(number) {
-  if( (number+'').includes('3'))
-  {
-    return "\"Won't you be my neighbor?\"";
+function roboger(number, name) {
+  if( (number+'').includes('3')) {
+    return "\"Won't you be my neighbor, "+ name + "?\"";
   }
-  else if( (number+'').includes('2'))
-  {
+  else if( (number+'').includes('2')) {
     return "\"Boop!\"";
   }
-  else if( (number+'').includes('1'))
-  {
+  else if( (number+'').includes('1')) {
     return "\"Beep!\"";
   }
   else {
@@ -17,15 +14,13 @@ function roboger(number) {
   }
 }
 
-
 // Business Logic
-function robo(num) {
+function robo(num, name) {
   let result = '';
-  for(let i = 0; i < num; i++)
-  {
-    result += roboger(i) + ", ";
+  for(let i = 0; i < num; i++) {
+    result += roboger(i, name) + ", ";
   }
-  result += roboger(num);
+  result += roboger(num, name);
   return result;
 }
 
@@ -35,14 +30,14 @@ $(document).ready(function(){
   $("form#roboger").submit(function(event){
     event.preventDefault();
     const number = parseInt($("#number").val());
-    
-    if(number<10000)
-    {
-      $("#robogerMessage").html(robo(number));
+    const name = $("#name").val();
+
+    if(number<1000) {
+      $("#robogerMessage").html(robo(number, name));
       $(".result2").hide();
       $(".result1").show();
     }
-    else{
+    else {
       $("#brokenMessage").html("The number you entered is too big and it broke my computer! Try again with a smaller number :)");
       $(".result1").hide();
       $(".result2").show();
