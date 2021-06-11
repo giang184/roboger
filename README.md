@@ -1,3 +1,40 @@
+# _Array and Looping_
+
+#### _This is my website written in HTML, CSS, and Javascript to practice array and looping algorithms_
+
+#### By _Andrew Giang_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _bootstrap.css_
+* JS
+* Jquery
+
+## Description
+
+_This is my website written to take a number from a user and return a range of numbers from 0 to the user's inputted number, replacing any numbers containing 1, 2 or 3 with "beep", "boop", and "won't you be my neighbor?" respectively._
+
+## Setup/Installation Requirements
+* Visit [this webpage](https://giang184.github.io/programmingLanguageSuggestor/). 
+
+* Or clone [this](https://github.com/giang184/programmingLanguageSuggestor.git) repository to your desktop
+* Navigate to the top level of the directory.
+* Open index.html in your browser.
+
+## Known Bugs
+
+* none
+
+## License
+
+* _[MIT](https://opensource.org/licenses/MIT)_
+
+## Contact Information
+
+* _Andrew Giang giang184@gmail.com_
+
 Describe: roboger()
 
 Test: "Number 1 will be replaced with "Beep!"
