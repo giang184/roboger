@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Pig Latin Translator</title>
+  <title>Mr. Roboger's Neighborhood</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -9,16 +9,27 @@
 </head>
 <body class = "background">
   <div class="container">
-    <form id="Roboger"></form>
-    <h1 class="center">Mr. Roboger's Neighborhood</h1>
-    <br>
-    <br>
-    <br>
-    <h4>Enter a number of your choice to see a fun message!</h4>
-    <br>
-    <label for="number">Input:</label>
-    <input id="number" type="text">
- 
+    <form id="roboger">
+      <h1 class="center">Mr. Roboger's Neighborhood</h1>
+      <br>
+      <br>
+      <br>
+      <h4>Enter a number of your choice to see a fun message!</h4>
+      <br>
+      <label for="number">Input:</label>
+      <input id="number" type="text">
+      <br>
+      <button type="submit" class="btn btn-success">Submit</button>
+      <br>
+      <br>
+      <div class="result">
+        <p><strong>Your friendly neighborhood message:</strong>
+          <br>
+          <br>
+          <span id="robogerMessage"></span>
+        </p>
+      </div>
+    </form> 
   </div>
 </body>
 </html>
