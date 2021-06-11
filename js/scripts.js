@@ -17,7 +17,6 @@ function roboger(number, name) {
   }
 }
 
-
 // Business Logic
 function robo(num, name, order) {
   let result = '';
@@ -35,7 +34,6 @@ function robo(num, name, order) {
   }
   return result;
 }
-
 
 // UI Logic 
 $(document).ready(function () {
