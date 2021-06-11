@@ -42,5 +42,6 @@ $(document).ready(function(){
       $(".result1").hide();
       $(".result2").show();
     }
+    
   });
 });
