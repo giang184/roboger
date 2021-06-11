@@ -1,6 +1,10 @@
 .center {
   text-align: center;
 }
+#input {
+  background-color: rgb(221, 243, 196);
+  padding: 15px;
+}
 h1 {
   font-size: 80px;
   font-weight: 800;

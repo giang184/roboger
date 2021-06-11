@@ -18,12 +18,20 @@ function roboger(number, name) {
 }
 
 // Business Logic
-function robo(num, name) {
+function robo(num, name, order) {
   let result = '';
-  for(let i = 0; i < num; i++) {
-    result += roboger(i, name) + ", ";
+  if(order === "ascending") {
+    for(let i = 0; i < num; i++) {
+      result += roboger(i, name) + ", ";
+    }
+    result += roboger(num, name);
   }
-  result += roboger(num, name);
+  else {
+    for(let i = num; i > 0; i--) {
+      result += roboger(i, name) + ", ";
+    }
+    result += roboger(0, name);
+  }
   return result;
 }
 
@@ -34,14 +42,15 @@ $(document).ready(function(){
     event.preventDefault();
     const number = parseInt($("#number").val());
     const name = $("#name").val();
+    const order = $("select#order").val();
 
     if(number<1000) {
-      $("#robogerMessage").html(robo(number, name));
+      $("#robogerMessage").html(robo(number, name, order));
       $(".result2").hide();
       $(".result1").show();
     }
     else {
-      $("#brokenMessage").html("You didn't enter a number or the number you entered is too big and it broke my computer! Try again with a smaller number :)");
+      $("#brokenMessage").html("You didn't enter a number or the number you entered is too big and it broke my computer! <br> <br> Try again with a smaller number :)");
       $(".result1").hide();
       $(".result2").show();
     }
