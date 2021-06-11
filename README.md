@@ -17,9 +17,9 @@
 _This is my website written to take a number from a user and return a range of numbers from 0 to the user's inputted number, replacing any numbers containing 1, 2 or 3 with "beep", "boop", and "won't you be my neighbor?" respectively._
 
 ## Setup/Installation Requirements
-* Visit [this webpage](https://giang184.github.io/programmingLanguageSuggestor/). 
+* Visit [this webpage](https://giang184.github.io/roboger/). 
 
-* Or clone [this](https://github.com/giang184/programmingLanguageSuggestor.git) repository to your desktop
+* Or clone [this]( https://github.com/giang184/roboger) repository to your desktop
 * Navigate to the top level of the directory.
 * Open index.html in your browser.
 
