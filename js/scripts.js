@@ -1,3 +1,22 @@
+// Utility Logic
+function roboger(number) {
+  if( (number+'').includes('3'))
+  {
+    return "Won't you be my neighbor?"
+  }
+  else if( (number+'').includes('2'))
+  {
+    return "Boop!"
+  }
+  else if( (number+'').includes('1'))
+  {
+    return "Beep!"
+  }
+  else {
+    return number+'';
+  }
+}
+
 // Business Logic
 function robo(num) {
   let result = '';
