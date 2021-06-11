@@ -1,7 +1,10 @@
 // Utility Logic
 function roboger(number, name) {
   if( (number+'').includes('3')) {
-    return "\"Won't you be my neighbor, "+ name + "?\"";
+    if(!name)
+      return "\"Won't you be my neighbor?\"";
+    else
+      return "\"Won't you be my neighbor, "+ name + "?\"";
   }
   else if( (number+'').includes('2')) {
     return "\"Boop!\"";
@@ -38,10 +41,10 @@ $(document).ready(function(){
       $(".result1").show();
     }
     else {
-      $("#brokenMessage").html("The number you entered is too big and it broke my computer! Try again with a smaller number :)");
+      $("#brokenMessage").html("You didn't enter a number or the number you entered is too big and it broke my computer! Try again with a smaller number :)");
       $(".result1").hide();
       $(".result2").show();
     }
-    
+
   });
 });

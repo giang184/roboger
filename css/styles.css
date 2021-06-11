@@ -16,12 +16,15 @@ label {
 .result1{
   display: none;
   background-color: rgb(245, 211, 171);
+  font-size: 25px;
   border: 1px solid rgb(10, 13, 48);
   padding: 10px;
 }
 .result2{
   display: none;
-  background-color: rgb(245, 211, 171);
+  background-color: rgb(189, 71, 35);
+  font-size: 30px;
+  color: rgb(255, 251, 0);
   border: 1px solid rgb(10, 13, 48);
   padding: 10px;
 }
